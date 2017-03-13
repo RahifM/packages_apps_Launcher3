@@ -26,4 +26,9 @@
     <string name="icon_pack">Icon pack</string>
     <string name="icon_pack_summary">Select a custom icon pack</string>
 
+    <!-- Search bar -->
+    <string name="search_bar_title">Search bar</string>
+    <string name="search_bar_desc_on">On</string>
+    <string name="search_bar_desc_off">Off</string>
+
 </resources>
