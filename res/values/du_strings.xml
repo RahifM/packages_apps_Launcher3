@@ -22,5 +22,8 @@
     <string name="icon_shape_system_circle">Circle</string>
     <string name="icon_shape_system_teardrop">Teardrop</string>
 
+    <!-- Icon packs -->
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Select a custom icon pack</string>
 
 </resources>
