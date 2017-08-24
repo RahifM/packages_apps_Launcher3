@@ -31,4 +31,8 @@
     <string name="search_bar_desc_on">On</string>
     <string name="search_bar_desc_off">Off</string>
 
+    <!-- Adaptive icons -->
+    <string name="adaptive_icons_title">Adaptive icons</string>
+    <string name="legacy_icons_title">Force adaptive icons</string>
+
 </resources>
