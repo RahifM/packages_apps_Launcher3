@@ -23,13 +23,13 @@
         <item>M50,0A50,50,0,0 1 100,50 L100,85 A15,15,0,0 1 85,100 L50,100 A50,50,0,0 1 50,0z</item>
     </string-array>
 
-    <string-array translatable="false" name="icon_shape_override_paths_names">
+    <string-array name="icon_shape_override_paths_names">
         <!-- Option to not change the icon shape on home screen. [CHAR LIMIT=50] -->
         <item>@string/icon_shape_system_default</item>
-        <item>Square</item>
-        <item>Squircle</item>
-        <item>Circle</item>
-        <item>Teardrop</item>
+        <item>@string/icon_shape_system_square</item>
+        <item>@string/icon_shape_system_squircle</item>
+        <item>@string/icon_shape_system_circle</item>
+        <item>@string/icon_shape_system_teardrop</item>
     </string-array>
 <!-- DragController -->
     <item type="id" name="drag_event_parity" />
