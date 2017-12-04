@@ -16,6 +16,11 @@
 
 <resources>
 
+    <!-- Preference categories -->
+    <string name="home_category_title">Home screen</string>
+    <string name="icon_category_title">App icons</string>
+    <string name="widget_category_title">Widgets</string>
+
     <!-- Icon shape on home screen -->
     <string name="icon_shape_system_square">Square</string>
     <string name="icon_shape_system_squircle">Squircle</string>
@@ -45,8 +50,6 @@
     <string name="icon_mask_squircle_string" translatable="false">M50,0 C10,0 0,10 0,50 0,90 10,100 50,100 90,100 100,90 100,50 100,10 90,0 50,0 Z</string>
     <string name="icon_mask_circle_string" translatable="false">M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z</string>
     <string name="icon_mask_teardrop_string" translatable="false">M50,0A50,50,0,0 1 100,50 L100,85 A15,15,0,0 1 85,100 L50,100 A50,50,0,0 1 50,0z</string>
-    <string name="icon_category_title">Icons</string>
-    <string name="other_category_title">Other</string>
     <string name="icon_shadow_title">Add icon shadow</string>
 
 </resources>

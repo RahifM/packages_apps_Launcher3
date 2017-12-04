@@ -17,8 +17,27 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
+        android:key="home_category"
+        android:title="@string/home_category_title" >
+
+        <SwitchPreference
+            android:key="pref_add_icon_to_home"
+            android:title="@string/auto_add_shortcuts_label"
+            android:summary="@string/auto_add_shortcuts_description"
+            android:defaultValue="true"
+            android:persistent="true" />
+
+        <SwitchPreference
+            android:key="pref_allowRotation"
+            android:title="@string/allow_rotation_title"
+            android:defaultValue="@bool/allow_rotation"
+            android:persistent="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="icon_category"
-        android:title="@string/icon_category_title" >
+        android:title="@string/icon_category_title">
 
         <com.android.launcher3.preferences.IconPackPreference
             android:key="pref_iconPackPackage"
@@ -66,24 +85,12 @@
             android:defaultValue="true"
             android:persistent="true"
             android:dependency="pref_adaptiveIcons" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="other_category"
-        android:title="@string/other_category_title" >
-
-        <SwitchPreference
-            android:key="pref_add_icon_to_home"
-            android:title="@string/auto_add_shortcuts_label"
-            android:summary="@string/auto_add_shortcuts_description"
-            android:defaultValue="true"
-            android:persistent="true" />
-
-        <SwitchPreference
-            android:key="pref_allowRotation"
-            android:title="@string/allow_rotation_title"
-            android:defaultValue="@bool/allow_rotation"
-            android:persistent="true" />
+        android:key="widget_category"
+        android:title="@string/widget_category_title">
 
         <SwitchPreference
             android:key="pref_searchBar"
@@ -92,5 +99,7 @@
             android:summaryOff="@string/search_bar_desc_off"
             android:defaultValue="true"
             android:persistent="true" />
+
     </PreferenceCategory>
+
 </PreferenceScreen>
