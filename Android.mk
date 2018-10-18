@@ -25,7 +25,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_SRC_FILES := quickstep/libs/sysui_shared.jar
 LOCAL_UNINSTALLABLE_MODULE := true
-LOCAL_SDK_VERSION := current
+LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 #
@@ -65,8 +66,8 @@ LOCAL_PROTO_JAVA_OUTPUT_PARAMS := enum_style=java
 
 LOCAL_USE_AAPT2 := true
 
-LOCAL_SDK_VERSION := current
-LOCAL_MIN_SDK_VERSION := 21
+LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_CERTIFICATE := platform
 LOCAL_PACKAGE_NAME := Launcher3
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2
@@ -115,8 +116,8 @@ LOCAL_PROTO_JAVA_OUTPUT_PARAMS := enum_style=java
 
 LOCAL_USE_AAPT2 := true
 
-LOCAL_SDK_VERSION := current
-LOCAL_MIN_SDK_VERSION := 21
+LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_CERTIFICATE := platform
 LOCAL_PACKAGE_NAME := Launcher3Go
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
@@ -170,8 +171,8 @@ LOCAL_PROTO_JAVA_OUTPUT_PARAMS := enum_style=java
 
 LOCAL_USE_AAPT2 := true
 
-LOCAL_SDK_VERSION := system_current
-LOCAL_MIN_SDK_VERSION := 26
+LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_CERTIFICATE := platform
 LOCAL_PACKAGE_NAME := Launcher3QuickStep
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
@@ -222,8 +223,8 @@ LOCAL_AAPT_FLAGS := \
     --auto-add-overlay \
     --extra-packages android.support.v7.recyclerview \
 
-LOCAL_SDK_VERSION := system_current
-LOCAL_MIN_SDK_VERSION := 26
+LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_CERTIFICATE := platform
 LOCAL_PACKAGE_NAME := Launcher3QuickStepGo
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
@@ -237,7 +238,6 @@ LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
 LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
 
 include $(BUILD_PACKAGE)
-
 
 # ==================================================
 include $(call all-makefiles-under,$(LOCAL_PATH))
